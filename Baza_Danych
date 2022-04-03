@@ -1,0 +1,33 @@
+CREATE TABLE `osoba` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `nazwa` varchar(255)
+);
+
+CREATE TABLE `kamera` (
+  `id` int PRIMARY KEY AUTO_INCREMENT,
+  `urzadzenia` varchar(255),
+  `status` varchar(255),
+  `model_kamery` varchar(255)
+);
+
+CREATE TABLE `pomiary_G` (
+  `id` int PRIMARY KEY,
+  `id_kamer` int,
+  `id_pomiar` int,
+  `id_user` int,
+  `data` varchar(255),
+  `czas` varchar(255)
+);
+
+CREATE TABLE `pomiar` (
+  `id` int PRIMARY KEY,
+  `marker_x` double,
+  `marker_y` double,
+  `marker_z` double
+);
+
+ALTER TABLE `pomiary_G` ADD FOREIGN KEY (`id_kamer`) REFERENCES `kamera` (`id`);
+
+ALTER TABLE `pomiary_G` ADD FOREIGN KEY (`id_user`) REFERENCES `osoba` (`id`);
+
+ALTER TABLE `pomiary_G` ADD FOREIGN KEY (`id_pomiar`) REFERENCES `pomiar` (`id`);
