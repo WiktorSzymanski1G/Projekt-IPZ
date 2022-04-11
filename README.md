@@ -1,6 +1,6 @@
 # Projekt-IPZ
 
-Zadanie polega na zaprojektowaniu oraz zbudowaniu urządzenia pozwalającego na wyznaczenie pozycji (x,y,z oraz rotacji) danego obiektu , na podstawie odczytu z dwóch kamer oraz przy wykorzystaniu kąta ich trianguacji. Będziemy mogli odczytać położenie obiektu znajdującego się około 2 metów od urządzenia.
+Zadanie polega na zaprojektowaniu oraz zbudowaniu urządzenia pozwalającego na wyznaczenie pozycji (x,y,z oraz rotacji) danego obiektu , na podstawie odczytu z dwóch kamer oraz przy wykorzystaniu kąta ich trianguacji. Będziemy mogli odczytać położenie obiektu znajdującego się około 2 metów od urządzenia i wykorzystywali diody na podczerwień oraz kulke z mikrolusterkami.
 
 
 Przebieg projektu
